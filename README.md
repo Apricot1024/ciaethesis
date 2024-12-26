@@ -7,7 +7,7 @@
 
 ## 重要建议
 
-* 关于 ciaethesis 编译和设计的问题，请先读 **模板使用说明.pdf**，如发问需遵从[提问流程](https://github.com/mohuangrui/ucasthesis/wiki/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98)。
+* 关于 ciaethesis 编译和设计的问题，请先读 **使用说明.pdf**，尽量不要发文。
 <!-- * 开题报告见：[ucasproposal: 中国科学院大学开题报告 LaTeX 模板](https://github.com/mohuangrui/ucasproposal)。
 * 书脊制作见：[latexspine: LaTeX 书脊模板](https://github.com/mohuangrui/latexspine)。 -->
 
