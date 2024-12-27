@@ -2,12 +2,13 @@
 
 ## 模板下载
 
-* 页面右边点击：**Clone or download -> Download Zip**
+* 页面右边点击：**Code -> Download Zip**
+* 或者 **Code -> git clone url**
 <!-- * [Overleaf](https://github.com/mohuangrui/ucasthesis/wiki/字体配置#linuxoverleaf-系统的字体配置) -->
 
 ## 重要建议
 
-* 关于 ciaethesis 编译和设计的问题，请先读 **使用说明.pdf**，尽量不要发文。
+* 关于 ciaethesis 编译和设计的问题，请先读 **使用说明.pdf**，尽量不要发问。
 <!-- * 开题报告见：[ucasproposal: 中国科学院大学开题报告 LaTeX 模板](https://github.com/mohuangrui/ucasproposal)。
 * 书脊制作见：[latexspine: LaTeX 书脊模板](https://github.com/mohuangrui/latexspine)。 -->
 
