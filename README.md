@@ -1,11 +1,12 @@
 # `ciaethesis` 原子能院学位论文 LaTeX 模板
 
-模板修改自[Github/ucasthesis](https://github.com/mohuangrui/ucasthesis)
+模板修改自[Github/ucasthesis](https://github.com/mohuangrui/ucasthesis)，鸣谢！
 ## 模板下载
 
 * 页面右边点击：**Code -> Download Zip**
 * 或者 **Code -> git clone url**
-* [Overleaf]()(仍在审核)
+* Overleaf 审核不建议发布
+<!-- * [Overleaf]()(仍在审核) -->
 <!-- * [Overleaf](https://github.com/mohuangrui/ucasthesis/wiki/字体配置#linuxoverleaf-系统的字体配置) -->
 
 ## 重要建议
@@ -36,6 +37,7 @@
 
 - `2024-12-27` 更新所有页码位置居中，上传overleaf，更新README.md，摘要描述移除改进（因为感觉是改退）。
 - `2024-12-27` 更新章节标题的数字，由阿拉伯数字改为中文数字。
+- `2025-04-24` 更新参考文献，英文参考文献作者由全部大写修改为仅首字母大写。
 <!-- * `2021-09-27` [benkwoook, issue #359](https://github.com/mohuangrui/ucasthesis/issues/359)，增强 artratex.sty，提供去掉“引言”类章节的章节编号的功能。
 
 * `2021-03-30` 更新原创性声明和使用声明页。移除英文封面声明中的 "the"。

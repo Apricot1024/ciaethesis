@@ -74,8 +74,8 @@ FUNCTION {load.config}
   #0 'show.missing.address.publisher :=
   #0 'only.start.page :=
   #1 'show.urldate :=
-  #1 'show.url :=
-  #1 'show.doi :=
+  #0 'show.url :=
+  #0 'show.doi :=
   #0 'show.preprint :=
   #0 'show.note :=
   #0 'show.english.translation :=
@@ -525,19 +525,32 @@ FUNCTION {set.entry.numbered}
 
 INTEGERS { nameptr namesleft numnames name.lang }
 
+% FUNCTION {format.name}
+% { "{vv~}{ll}{, jj}{, ff}" format.name$ 't :=
+%   t "others" =
+%     { bbl.et.al }
+%     { t get.str.lang 'name.lang :=
+%       name.lang lang.en =
+%         { t #1 "{vv~}{ll}{~f.}" format.name$ }  % 仅首字母大写
+%         % { t #1 "{vv~}{ll}{~f{~}}" format.name$
+%         %   uppercase.name
+%         %     { "u" change.case$ }
+%         %     'skip$
+%         %   if$
+%         %   t #1 "{, jj}" format.name$ *
+%         % }
+%         { t #1 "{ll}{ff}" format.name$ }
+%       if$
+%     }
+%   if$
+% }
 FUNCTION {format.name}
 { "{vv~}{ll}{, jj}{, ff}" format.name$ 't :=
   t "others" =
     { bbl.et.al }
     { t get.str.lang 'name.lang :=
       name.lang lang.en =
-        { t #1 "{vv~}{ll}{~f{~}}" format.name$
-          uppercase.name
-            { "u" change.case$ }
-            'skip$
-          if$
-          t #1 "{, jj}" format.name$ *
-        }
+        { t #1 "{vv~}{ll}{~f.}" format.name$ }  % 仅首字母大写
         { t #1 "{ll}{ff}" format.name$ }
       if$
     }
