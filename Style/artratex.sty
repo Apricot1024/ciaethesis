@@ -579,6 +579,7 @@
 \RequirePackage[format=plain,hangindent=2.0em,font={small,bf},skip=8pt,labelsep=space]{caption}% options: [margin=10pt,labelfont=bf]
 \RequirePackage{subcaption}% package for subfigures
 \RequirePackage[list=off]{bicaption}% package for binary captions
+\RequirePackage{notoccite}
 \DeclareCaptionOption{bi-first}[]{}% 1st language
 \DeclareCaptionOption{bi-second}[]{% 2nd language
     \def\tablename{Table}%
@@ -587,6 +588,15 @@
 \captionsetup[bi-first]{bi-first,justification=centering}%
 \captionsetup[bi-second]{bi-second,justification=centering}%
 \RequirePackage[section]{placeins}% prevent floats from being moved over section
+
+% \makeatletter
+% \let\old@bicaption\@bicaption
+% \renewcommand{\@bicaption}[2]{%
+%     \old@bicaption{#1}{#2}%
+%     \global\let\@currentlabel\relax % 确保引用计数全局一致
+% }
+% \makeatother
+
 %-
 %-> Page layout and spacing
 %-
